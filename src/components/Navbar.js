@@ -20,9 +20,6 @@ function Navbar() {
                 </button>
             </div>
             <div className='links'>
-                <div className='portfolioName'>
-                    <h2 className='logo'>My Portfolio</h2>
-                </div>
                 <Link to='/'>Home</Link>
                 <Link to='/projects'>Projects</Link>
                 <Link to='/experience'>Experience</Link>
