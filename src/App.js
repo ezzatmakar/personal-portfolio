@@ -14,6 +14,7 @@ function App() {
       <Helmet>
         <title>Ezzat Makar | Software Engineer Portfolio</title>
         <meta name="description" content="Welcome to Ezzat Makar's personal portfolio website! As a passionate software engineer, I showcase my latest projects, skills, and experiences in the world of software development." />
+        <meta name="keywords" content="Ezzat Makar, software engineer, portfolio, projects, web development, mobile development, software solutions, technology, innovation, creativity" />
       </Helmet>
       <Router>
         <Navbar />
