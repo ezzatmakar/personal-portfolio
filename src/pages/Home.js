@@ -23,7 +23,8 @@ function Home() {
             backSpeed={50}
             loop
           />
-          <br></br>
+        </div>
+        <div className="prompt">
           <Link to='mailto:ezzatmakar93@gmail.com'><EmailIcon /></Link>
           <Link to='https://github.com/ezzatmakar'><GithubIcon /></Link>
           <Link to='https://www.linkedin.com/in/ezzat-makar/'><LinkedInIcon /></Link>
