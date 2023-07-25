@@ -6,7 +6,6 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 import SchoolIcon from "@material-ui/icons/School";
 import WorkIcon from "@material-ui/icons/Work";
-import { Link } from "@material-ui/core";
 import '../styles/Experience.css'
 
 function Experience() {
@@ -20,7 +19,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Remote Back End Engineer | <Link to='https://www.montech.io/'>Montech Studios Inc</Link>
+            Remote Back End Engineer | <a target="blank" href='https://www.montech.io/'>Montech Studios Inc</a>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Headquarters Miami, FL
@@ -30,11 +29,11 @@ function Experience() {
           <p className="technical-list">Nodejs, NestJs, ExpressJs, MongoDB, MySQL</p>
           <h5 className="technical-title">Projects:</h5>
           <p className="technical-list">
-            <Link to="https://admin.values.co/login">Values Co Dashboard</Link>,&nbsp;
-            <Link to="https://app.values.co/login">Values Co Market</Link>,&nbsp;
-            <Link to="https://derived.art/">Derived Art Market</Link>,&nbsp;
-            <Link to="https://admin.derived.art/">Derived Art Admin Board</Link>,&nbsp;
-            <Link to="https://museum.derived.art/login">Derived Art Museum Board</Link>
+            <a target="blank" href="https://admin.values.co/login">Values Co Dashboard</a>,&nbsp;
+            <a target="blank" href="https://app.values.co/login">Values Co Market</a>,&nbsp;
+            <a target="blank" href="https://derived.art/">Derived Art Market</a>,&nbsp;
+            <a target="blank" href="https://admin.derived.art/">Derived Art Admin Board</a>,&nbsp;
+            <a target="blank" href="https://museum.derived.art/login">Derived Art Museum Board</a>
           </p>
         </VerticalTimelineElement>
 
@@ -45,7 +44,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full-Stack Developer | <Link to='https://www.octopuspro.com/'>OctopusPro</Link>
+            Full-Stack Developer | <a target="blank" href='https://www.octopuspro.com/'>OctopusPro</a>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Cairo, Egypt
@@ -56,7 +55,7 @@ function Experience() {
             Docker, MongoDB, Redis, jQuery</p>
           <h5 className="technical-title">Projects:</h5>
           <p className="technical-list">
-            <Link to="https://admin.octopuspro.com/">OctopusPro</Link>
+            <a target="blank" href="https://admin.octopuspro.com/">OctopusPro</a>
           </p>
         </VerticalTimelineElement>
 
@@ -67,7 +66,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full-Stack Developer | <Link to='https://www.sandcti.com/'>Soft kinetics</Link>
+            Full-Stack Developer | <a target="blank" href='https://www.sandcti.com/'>Soft kinetics</a>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Cairo, Egypt
@@ -86,7 +85,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full-Stack Developer | <Link to='https://integritycorp.net'>Integrity Corporation</Link>
+            Full-Stack Developer | <a target="blank" href='https://integritycorp.net'>Integrity Corporation</a>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Cairo, Egypt
@@ -108,7 +107,7 @@ function Experience() {
           icon={<WorkIcon />}
         >
           <h3 className="vertical-timeline-element-title">
-            Full-Stack Developer | <Link to='https://www.bni.agency'>BNI Agency</Link>
+            Full-Stack Developer | <a target="blank" href='https://www.bni.agency'>BNI Agency</a>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Cairo, Egypt
