@@ -1,8 +1,20 @@
-import React from 'react';
-import '../styles/Projects.css';
+import React from "react";
+import ProjectItem from "../components/ProjectItem";
+import { ProjectList } from "../helpers/ProjectList";
 
-export default function Projects() {
+import "../styles/Projects.css";
+
+function Projects() {
   return (
-    <div>Projects</div>
-  )
+    <div className="projects">
+      <h1>My Personal Projects</h1>
+      <div className="projectList">
+        {ProjectList.map((project) => {
+          return <ProjectItem id={project.id} project={project} key={project.id} slug={project.slug} />;
+        })}
+      </div>
+    </div>
+  );
 }
+
+export default Projects;

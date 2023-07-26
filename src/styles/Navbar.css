@@ -88,3 +88,23 @@
     flex-direction: row;
   }
 }
+.activeLink {
+  display: inline;
+  position: absolute;
+  vertical-align: middle;
+  color: #e9d35b;
+  font-size: 26px;
+  left: 24px;
+  top: 10px;
+  text-decoration: overline;
+  text-transform: capitalize;
+}
+
+.activeLink .activeLinkTitle {
+  padding: 0
+}
+
+.links .active {
+  color: #e9d35b;
+  text-decoration: underline;
+}
