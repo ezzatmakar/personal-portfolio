@@ -28,3 +28,10 @@
   font-size: 60px;
   color: #3e497a;
 }
+
+@media screen and (max-width: 768px) {
+  .project img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}

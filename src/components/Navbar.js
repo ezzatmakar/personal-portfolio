@@ -10,21 +10,29 @@ function Navbar() {
 
     useEffect(() => {
         setExpandNavbar(false);
-        // Get the name of the active route and set it in the state
         const activeRoute = getActiveRouteName();
         setActiveRouteName(activeRoute);
     }, [location]);
 
-    // Function to check if the link is active
     const isLinkActive = (path) => {
         return location.pathname === path;
     }
 
+    console.log(location.pathname)
     // Function to get the name of the active route
     const getActiveRouteName = () => {
-        // Replace '/' with 'Home' and remove leading '/'
-        return location.pathname === '/' ? 'Home' : location.pathname.replace('/', '');
-    }
+        let pathName = '';
+        if (location.pathname === '/') {
+            pathName = 'Home';
+        } else if (location.pathname.includes('/project/')) {
+            pathName = location.pathname.replace(/\/project\//i, '');
+            console.log(pathName);
+        } else {
+            pathName = location.pathname.replace('/', '');
+        }
+        return pathName;
+    };
+
 
     return (
         <div className='navbar' id={expandNavbar ? 'open' : 'close'}>
