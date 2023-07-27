@@ -2,6 +2,7 @@ import React from "react";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import GithubIcon from "@material-ui/icons/GitHub";
+import PhoneIcon from '@material-ui/icons/Phone';
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import "../styles/Home.css";
@@ -28,6 +29,7 @@ function Home() {
           <Link to='mailto:ezzatmakar93@gmail.com'><EmailIcon /></Link>
           <Link to='https://github.com/ezzatmakar'><GithubIcon /></Link>
           <Link to='https://www.linkedin.com/in/ezzat-makar/'><LinkedInIcon /></Link>
+          <Link to='tel:+201067370803'><PhoneIcon /></Link>
         </div>
       </div>
       <div className="skills">
