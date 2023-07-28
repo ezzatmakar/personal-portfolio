@@ -7,7 +7,7 @@ import "../styles/Projects.css";
 function Projects() {
   return (
     <div className="projects">
-      <h1>My Personal Projects</h1>
+      <h1>Projects</h1>
       <div className="projectList">
         {ProjectList.map((project) => {
           return <ProjectItem id={project.id} project={project} key={project.id} slug={project.slug} />;
