@@ -6,6 +6,7 @@ import PhoneIcon from '@material-ui/icons/Phone';
 import { Link } from "react-router-dom";
 import Typed from "react-typed";
 import "../styles/Home.css";
+import PdfViewer from "../components/PdfViewer";
 
 function Home() {
   return (
@@ -30,6 +31,7 @@ function Home() {
           <Link to='https://github.com/ezzatmakar'><GithubIcon /></Link>
           <Link to='https://www.linkedin.com/in/ezzat-makar/'><LinkedInIcon /></Link>
           <Link to='tel:+201067370803'><PhoneIcon /></Link>
+          <PdfViewer />
         </div>
       </div>
       <div className="skills">
