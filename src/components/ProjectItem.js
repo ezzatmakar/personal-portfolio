@@ -1,12 +1,10 @@
 import React from "react";
 import { Link, useNavigate } from "react-router-dom";
-import PropTypes from "prop-types";
 
-function ProjectItem({ project, slug }) {
+const ProjectItem = ({ project, slug }) => {
   const navigate = useNavigate();
 
-  // Ensure the project object is valid
-  if (!project || !slug || !project.id || !project.name || !project.image || !project.description) {
+  if (!project || !slug) {
     return (
       <>
         <div><h1>not found</h1></div>
@@ -29,13 +27,4 @@ function ProjectItem({ project, slug }) {
   );
 }
 
-ProjectItem.propTypes = {
-  project: PropTypes.shape({
-    id: PropTypes.string.isRequired,
-    slug: PropTypes.string.isRequired,
-    name: PropTypes.string.isRequired,
-    image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }).isRequired,
-};
 export default ProjectItem;

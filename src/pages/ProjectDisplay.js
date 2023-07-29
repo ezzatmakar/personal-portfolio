@@ -1,10 +1,9 @@
 import React, {useEffect, useState} from "react";
 import {useParams} from "react-router-dom";
-import {ProjectList} from "../helpers/ProjectList";
-import GitHubIcon from "@material-ui/icons/GitHub";
+import { ProjectList } from "../helpers/ProjectList";
 import "../styles/ProjectDisplay.css";
 
-function ProjectDisplay() {
+const ProjectDisplay = () => {
 
     const {slug} = useParams();
     const [project, setProject] = useState(null);

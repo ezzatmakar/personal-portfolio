@@ -1,20 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import ProjectItem from "../components/ProjectItem";
 import { ProjectList } from "../helpers/ProjectList";
 
 import "../styles/Projects.css";
 
 function Projects() {
-  return (
-    <div className="projects">
-      <h1>Projects</h1>
-      <div className="projectList">
-        {ProjectList.map((project) => {
-          return <ProjectItem id={project.id} project={project} key={project.id} slug={project.slug} />;
-        })}
-      </div>
-    </div>
-  );
+    const [selectedType, setSelectedType] = useState("all");
+    const types = ["all", ...new Set(ProjectList.map((project) => project.type))];
+    const filteredProjects =
+        selectedType === "all"
+            ? ProjectList
+            : ProjectList.filter((project) => project.type === selectedType);
+
+    return (
+        <div className="projects">
+            <div className="filter">
+                {types.map((type) => (
+                    <button
+                        key={type}
+                        className={selectedType === type ? "active" : ""}
+                        onClick={() => setSelectedType(type)}
+                    >
+                        {type === "all" ? "All" : type}
+                    </button>
+                ))}
+            </div>
+            <div className="projectList">
+                {filteredProjects.map((project) => {
+                    return (
+                        <ProjectItem
+                            key={project.id}
+                            id={project.id}
+                            project={project}
+                            slug={project.slug}
+                        />
+                    );
+                })}
+            </div>
+        </div>
+    );
 }
 
 export default Projects;
